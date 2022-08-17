@@ -1,0 +1,4 @@
+#!/bin/bash
+f=B2Dh_D2KKpipi_Approval_Presentation_30th_August_2022.tex
+pdflatex $f && pdflatex $f
+rm *.aux *.log *.nav *.out *.snm *.toc
