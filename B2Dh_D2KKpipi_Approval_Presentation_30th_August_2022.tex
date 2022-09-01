@@ -44,7 +44,7 @@
 \newcommand{\myrbrace}[2]{\vspace{#2pt}\scaleleftright[\dimexpr5pt+#1\dimexpr0.06pt]{.}{\rule[\dimexpr2pt-#1\dimexpr0.5pt]{-4pt}{#1pt}}{\rbrace}\hspace{6pt}}
 
 % Here's where the presentation starts, with the info for the title slide
-\title[$B^\pm\to(K^+K^-\pi^+\pi^-)_Dh^\pm$]{Model-independent (sort of) determination of the CKM angle \texorpdfstring{$\gamma$}{gamma} in \texorpdfstring{$B^\pm\to(K^+K^-\pi^+\pi^-)_Dh^\pm$}{B to K+K-pi+pi-} decays}
+\title[$B^\pm\to(K^+K^-\pi^+\pi^-)_Dh^\pm$]{A study of CP violation in \texorpdfstring{$B^\pm\to(K^+K^-\pi^+\pi^-)_Dh^\pm$}{B to K+K-pi+pi-} and \texorpdfstring{$B^\pm\to(\pi^+\pi^-\pi^+\pi^-)_Dh^\pm$}{B to K+K-pi+pi-} decays}
 
 \author{\textbf{Martin Tat} \hspace{0.54em} Guy Wilkinson \hspace{0.54em} Sneha Malde}
 \institute{\normalsize University of Oxford \\ \vspace{0.3cm} \normalsize Approval presentation \vspace{-0.2cm}}
@@ -88,13 +88,15 @@
 
 \begin{frame}{Introduction and motivation}
   \begin{itemize}
-    \setlength\itemsep{1.2em}
-    \item{Aim of this analysis: Model independent measurement of $\gamma$ with $B^\pm\to[K^+K^-\pi^+\pi^-]_D h^\pm$, $h = K, \pi$}
+    \setlength\itemsep{0.0em}
+    \item{Aim of this analysis: Measure CP observables in $B^\pm\to[K^+K^-\pi^+\pi^-]_D h^\pm$, $h = K, \pi$ decays}
     \begin{itemize}
       \setlength\itemsep{0.5em}
       \item{First study of CP violation in this channel}
       \item{Enhance sensitivity through sophisticated binning of 5D phase space}
+      \item{Provide input for future model-independent measurement of $\gamma$}
     \end{itemize}
+    \item{Also measure phase space inclusive CP observables for $B^\pm\to[\pi^+\pi^-\pi^+\pi^-]_D h^\pm$, $h = K, \pi$ decays}
   \end{itemize}
   \vspace{-0.2cm}
   \begin{figure}
@@ -120,9 +122,10 @@
       \item{\href{https://arxiv.org/abs/1811.08304}{JHEP 02 (2019) 126}}
       \item{Develop a suitable binning scheme}
     \end{itemize}
-    \item{Anticipate $20$ fb$^{-1}$ of $\psi(3770)$ data from BESIII by end of 2023}
+    \item{No measurement of strong phases $c_i$ and $s_i$ exists today}
     \begin{itemize}
-      \item{Allows for a direct strong phase measurements of $D^0\to K^+K^-\pi^+\pi^-$}
+      \item{Current BESIII dataset is $8$~fb$^{-1}$}
+      \item{Allows for a direct measurement of $D\to K^+K^-\pi^+\pi^-$ strong phases}
       \item{Final $\gamma$ measurement will be model independent}
     \end{itemize}
   \end{itemize}
@@ -195,6 +198,9 @@
   \end{center}
   \begin{itemize}
     \item{Bin along $\delta_D$ and $r_D$, maximize $Q$-value to optimize}
+    \begin{itemize}
+      \item{$Q = 1$ corresponds to unbinned limit}
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -212,7 +218,7 @@
 
 \section{Quasi-GLW method}
 
-\begin{frame}{The quasi-GLW method}
+\begin{frame}{Phase-space inclusive CP observables}
   \begin{itemize}
     \setlength\itemsep{0.5em}
     \item{Statistically independent analysis without phase space binning}
@@ -228,11 +234,30 @@
     \begin{center}
       $R_{\rm CP} = \frac{R_{hh\pi\pi}}{R_{K\pi\pi\pi}}, \quad R = \frac{\Gamma(B^-\to D K^-) + \Gamma(B^+\to D K^+)}{\Gamma(B^-\to D\pi^-) + \Gamma(B^+\to D\pi^+)}$
     \end{center}
+    \item{Measure $A_h$ and $R_{\rm CP}$ for $B^\pm\to[K^+K^-\pi^+\pi^-]_Dh^\pm$ and $B^\pm\to[\pi^+\pi^-\pi^+\pi^-]_Dh^\pm$}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Phase-space inclusive CP observables}
   \begin{block}{CP observables and physics parameters}
     $A_h = \frac{2r_B^{Dh}(2F_+ - 1)\sin(\delta_B^{Dh})\sin(\gamma)}{1 + (r_B^{Dh})^2 + 2r_B^{Dh}(2F_+ - 1)\cos(\delta_B^{Dh})\cos(\gamma)}$, \\~\\
     $R_{\rm CP} = 1 + (r_B^{Dh})^2 + 2r_B^{Dh}(2F_+ - 1)\cos(\delta_B^{Dh})\cos(\gamma)$
   \end{block}
+  \vspace{0.3cm}
+  \begin{itemize}
+    \setlength\itemsep{0.5em}
+    \item{Need CP-even fraction $F_+$ to interpret in terms of physics parameters}
+    \item{For $D^0\to K^+K^-\pi^+\pi^-$:}
+    \begin{itemize}
+      \item{$F_+ = 0.736$}
+      \item{Calculated from the model}
+    \end{itemize}
+    \item{For $D^0\to\pi^+\pi^-\pi^+\pi^-$:}
+    \begin{itemize}
+      \item{$F_+ = 0.735 \pm 0.016$}
+      \item{Recent measurement by BESIII \href{https://arxiv.org/abs/2208.10098}{arXiv:2208.10098}}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \section{Publication strategy}
@@ -392,6 +417,16 @@
       \caption{$x_\xi^{D\pi}$ vs $y_\xi^{D\pi}$}
     \end{subfigure}
   \end{figure}
+  \vspace{-0.3cm}
+  \begin{align*}
+    x_\pm^{DK} = r_B\cos(\delta_B\pm\gamma) \\
+    y_\pm^{DK} = r_B\sin(\delta_B\pm\gamma)
+  \end{align*}
+  \vspace{-0.5cm}
+  \begin{itemize}
+    \item{Shown are the $2\sigma$ contours of fitted CP observables}
+    \item{The distinct $B^\pm\to DK^\pm$ contours indicate CP violation, while the $B^\pm\to D\pi^\pm$ mode has very low sensitivity to CP violation}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Fractional bin asymmetries}
@@ -407,6 +442,10 @@
       \caption{$B^\pm\to D\pi^\pm$}
     \end{subfigure}
   \end{figure}
+  \begin{itemize}
+    \item{Useful cross check to compare measured bin asymmetries against bin asymmetries predicted by the fitted CP observables}
+    \item{The $B^\pm\to DK^\pm$ mode show non-zero bin asymmetries, and the non-trivial distribution is driven by the change in strong phases across phase space}
+  \end{itemize}
 \end{frame}
 
 \subsection{Systematic uncertainties}
@@ -483,6 +522,35 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{Summary of measured CP observables}
+  \vspace{-0.2cm}
+  \begin{itemize}
+    \item{Measured binned CP observables:}
+  \end{itemize}
+  \vspace{-0.2cm}
+  \begin{align*}
+    x_-^{DK} =& (7.9 \pm 2.9 \pm 0.4 \pm 0.4)\times 10^{-2} \\
+    y_-^{DK} =& (-3.3 \pm 3.4 \pm 0.4 \pm 3.6)\times 10^{-2} \\
+    x_+^{DK} =& (-12.5 \pm 2.5 \pm 0.3 \pm 1.3)\times 10^{-2} \\
+    y_+^{DK} =& (-4.2 \pm 3.1 \pm 0.3 \pm 1.3)\times 10^{-2} \\
+    x_\xi^{D\pi} =& (-3.1 \pm 4.3 \pm 0.7 \pm 0.1)\times 10^{-2} \\
+    y_\xi^{D\pi} =& (-1.7 \pm 5.2 \pm 0.6 \pm 1.1)\times 10^{-2}
+  \end{align*}
+  \vspace{-0.7cm}
+  \begin{itemize}
+    \item{Measured inclusive CP observables:}
+  \end{itemize}
+  \vspace{-0.2cm}
+  \begin{align*}
+    A_K^{KK\pi\pi} =& 0.093 \pm 0.023 \pm 0.002 \\
+    A_\pi^{KK\pi\pi} =& -0.009 \pm 0.006 \pm 0.001 \\
+    A_K^{\pi\pi\pi\pi} =& 0.060 \pm 0.013 \pm 0.001 \\
+    A_\pi^{\pi\pi\pi\pi} =& -0.0082 \pm 0.0031 \pm 0.0007 \\
+    R_{\rm CP}^{KK\pi\pi} =& 0.974 \pm 0.024 \pm 0.015 \\
+    R_{\rm CP}^{\pi\pi\pi\pi} =& 0.978 \pm 0.014 \pm 0.010
+  \end{align*}
+\end{frame}
+
 \section{Interpretation}
 
 \begin{frame}{Interpretation}
@@ -496,52 +564,52 @@
     \end{subfigure}
   \end{figure}
   \vspace{-0.75cm}
+  Results from binned fit:
   \begin{align*}
-    \gamma &= (116^{+12}_{-14})^\circ, \\
-    \delta_B^{DK} &= (81^{+14}_{-13})^\circ, \\
-    r_B^{DK} &= 0.110^{+0.020}_{-0.020}, \\
-    \delta_B^{D\pi} &= (298^{+62}_{-118})^\circ, \\
-    r_B^{D\pi} &= 0.0041^{+0.0055}_{-0.0041},
+    \gamma &= (116^{+12}_{-14})^\circ \\
+    \delta_B^{DK} &= (81^{+14}_{-13})^\circ \\
+    r_B^{DK} &= 0.110^{+0.020}_{-0.020} \\
+    \delta_B^{D\pi} &= (298^{+62}_{-118})^\circ \\
+    r_B^{D\pi} &= 0.0041^{+0.0055}_{-0.0041}
   \end{align*}
 \end{frame}
 
-\section{Summary}
-
-\begin{frame}{Summary}
+\begin{frame}{Interpretation}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.50\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/gammacharm_lhcb_KKpipi_GLW_KKpipi_GGSZ_lhcb_2020_beauty_and_charm_g_d_dk.pdf}
+    \end{subfigure}%
+    \begin{subfigure}{0.50\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/gammacharm_lhcb_KKpipi_GLW_KKpipi_GGSZ_lhcb_2020_beauty_and_charm_r_dk_d_dk.pdf}
+    \end{subfigure}
+  \end{figure}
+  \vspace{-0.35cm}
   \begin{itemize}
-    \item{Measured CP observables:}
+    \item{Value of $\gamma$ from binned analysis is somewhat high, but falls within the $3\sigma$ contours}
+    \item{Phase space inclusive measurement are compatible with our expectations}
+    \item{Interpretation may evolve when full model independent inputs are available}
   \end{itemize}
-  \vspace{-0.2cm}
-  \begin{align*}
-    x_-^{DK} =& (7.9 \pm 2.9 \pm 0.4 \pm 0.4)\times 10^{-2}, \\
-    y_-^{DK} =& (-3.3 \pm 3.4 \pm 0.4 \pm 3.6)\times 10^{-2}, \\
-    x_+^{DK} =& (-12.5 \pm 2.5 \pm 0.3 \pm 1.3)\times 10^{-2}, \\
-    y_+^{DK} =& (-4.2 \pm 3.1 \pm 0.3 \pm 1.3)\times 10^{-2}, \\
-    x_\xi^{D\pi} =& (-3.1 \pm 4.3 \pm 0.7 \pm 0.1)\times 10^{-2}, \\
-    y_\xi^{D\pi} =& (-1.7 \pm 5.2 \pm 0.6 \pm 1.1)\times 10^{-2},
-  \end{align*}
-  \vspace{-0.5cm}
-  \begin{itemize}
-    \item{Measured physics parameters:}
-  \end{itemize}
-  \vspace{-0.2cm}
-  \begin{align*}
-    \gamma &= (116^{+12}_{-14})^\circ, \\
-    \delta_B^{DK} &= (81^{+14}_{-13})^\circ, \\
-    r_B^{DK} &= 0.110^{+0.020}_{-0.020}, \\
-    \delta_B^{D\pi} &= (298^{+62}_{-118})^\circ, \\
-    r_B^{D\pi} &= 0.0041^{+0.0055}_{-0.0041},
-  \end{align*}
 \end{frame}
 
 \section{Conclusion}
 
 \begin{frame}{Conclusion}
   \begin{itemize}
-    \setlength\itemsep{2.5em}
+    \setlength\itemsep{0.5em}
     \item{First study of CP violation has been performed in $B^\pm\to[K^+K^-\pi^+\pi^-]_D h^\pm$ in bins of phase space}
     \item{Phase space inclusive measurement for $B^\pm\to[K^+K^-\pi^+\pi^-]_D h^\pm$ and $B^\pm\to[\pi^+\pi^-\pi^+\pi^-]_D h^\pm$}
-    \item{This publication is model dependent, but strong phases will be available from BESIII soon}
+    \item{This publication is model dependent, but strong phases will become available from BESIII soon}
+    \begin{itemize}
+      \item{Sufficient information will be provided in the paper to allow a model independent update when $c_i$ and $s_i$ become available}
+    \end{itemize}
+    \item{Complete paper draft is available}
+    \item{Link to:}
+    \begin{itemize}
+      \item{\href{https://twiki.cern.ch/twiki/bin/viewauth/LHCbPhysics/GGSZB2DhD2hhpipiModelIndependent}{TWiki}}
+      \item{\href{https://twiki.cern.ch/twiki/pub/LHCbPhysics/GGSZB2DhD2hhpipiModelIndependent/LHCb-ANA-2021-051-v9.pdf}{ANA note}}
+      \item{\href{https://twiki.cern.ch/twiki/pub/LHCbPhysics/GGSZB2DhD2hhpipiModelIndependent/LHCb-PAPER-2022-XXX-v0.pdf}{Paper draft} (also uploaded to Indico)}
+    \end{itemize}
   \end{itemize}
   \begin{center}
     \huge Thanks for listening!
